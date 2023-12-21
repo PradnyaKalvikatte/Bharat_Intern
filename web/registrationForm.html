@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container" id="registrationForm" >
+        <form>
+            <h2 class="h2">Sign-Up Here!</h2>
+            <br>
+        <div class="grid-container"style="gap:10px;" >
+            <!-- Your registration form content -->
+            <div class="role-dropdown form-group" style="margin-bottom:10px;">
+                <select id="role" name="role" style="color: #9F2365;" required>
+                    <option value="" disabled selected>Register as</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="principal">Principal</option>
+                </select>
+            </div>
+             <div class="role-dropdown form-group"style="margin-bottom:10px;">
+                <select id="gender" name="gender" style="color: #9F2365"  required>
+                    <option value="" disabled selected >Gender</option>
+                    <option value="student">Male</option>
+                    <option value="teacher">Female</option>
+                    <option value="principal">Others</option>
+                </select>
+                <label for="gender" style="box-shadow: none;" ></label>
+            </div>
+            <div class="form-group">
+                <input type="file" id="image" name="image" accept="image/*" style="color:#9F2365;">
+                <label for="image" style="color:#9F2365;">Image</label>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Phone No.</label>
+          </div>
+            <div class="form-group">
+                <input type="text" id="username" name="username" required >
+                <label for="username">Username</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+             <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="address" name="address" required>
+                <label for="address">Address</label>
+            </div>
+        </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Register</button>
+                <button type="button" class="cancel-btn" onclick="cancelRegistration()">Cancel</button>
+            </div>
+            <p>Already have an account?<span style="color:#9F2365;">Login</span></p>
+        </form>
+    </div>
+</body>
+</html>
